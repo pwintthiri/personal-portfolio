@@ -70,7 +70,18 @@ let swiper = new Swiper('.portfolio__container', {
     },
   });
 
-/*==================== TESTIMONIAL ====================*/
+/*==================== GALLERY MODAL ====================*/
+const blackdress = document.getElementById('blackdress')
+const modal_container = document.getElementById('modal_container')
+const close_modal = document.getElementById('close_modal')
+
+blackdress.addEventListener('click', () => {
+    modal_container.classList.add('show');
+});
+
+close_modal.addEventListener('click', () => {
+    modal_container.classList.remove('show');
+});
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/

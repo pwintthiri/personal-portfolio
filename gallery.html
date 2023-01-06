@@ -21,7 +21,7 @@
 
         <title>Gallery</title>
     </head>
-    <body>
+    <body class="gallery_body">
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -82,39 +82,41 @@
                <div class="gallery_container container ">
                     <div class="gallery_sections">
                         <div class="gallery__row">
-                            <div class="gallery__item">
-                                <img src="assets/img/blackDressCover.jpeg" alt="Avatar" class="gallery_img">
+                            <div class="gallery__item" id="blackdress">
+                                <img src="assets/img/blackDressCover.jpeg" alt="sparkly black dress" class="gallery_img">
                                 <div class="overlay">
                                   <div class="gallery_overlay_text">Sparkly Flower Dress</div>
                                 </div>
                               </div>
-                              <div class="gallery__item">
-                                <img src="assets/img/pearlButtonsCover.jpeg" alt="Avatar" class="gallery_img">
+                              <div class="gallery__item" id="pearltop">
+                                <img src="assets/img/pearlButtonsCover.jpeg" alt="pearl button top" class="gallery_img">
                                 <div class="overlay">
                                   <div class="gallery_overlay_text">Pearl Button Top</div>
                                 </div>
                               </div>
-                              <div class="gallery__item">
-                                <img src="assets/img/greenDressCover.jpeg" alt="Avatar" class="gallery_img">
+                              <div class="gallery__item" id="greendress">
+                                <img src="assets/img/greenDressCover.jpeg" alt="green dress" class="gallery_img">
                                 <div class="overlay">
                                   <div class="gallery_overlay_text">Green Flowy Dress</div>
                                 </div>
                               </div>
-                              <div class="gallery__item">
-                                <img src="assets/img/denimHat.jpeg" alt="Avatar" class="gallery_img">
+                              <div class="gallery__item" id="denimhat">
+                                <img src="assets/img/denimHat.jpeg" alt="reversible denim hat" class="gallery_img">
                                 <div class="overlay">
                                   <div class="gallery_overlay_text">Reversible Denim Hat</div>
                                 </div>
                               </div>
-                              
-        
+            
+                            </div>
                         </div>
+                </div>
 
-                           
-                   
-
+                <div class="modal_container" id="modal_container">
+                    <div class="modal">
+                        <p>here we write about the piece</p>
+                        <button class="close" id="close_modal">Close</button>
                     </div>
-               </div>
+                </div>
             </section>
 
 
