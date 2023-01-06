@@ -155,7 +155,8 @@ img {
 
 .section__subtitle {
   display: block;
-  font-size: var(--small-font-size);
+  font-size: var(--font-medium);
+  font-weight: bold;
   margin-bottom: var(--mb-3);
 }
 
@@ -659,10 +660,10 @@ img {
   font-weight: bolder;
   color: var(--title-color);
   text-align: center;
-  padding-bottom: 2rem;
 }
 
 .gallery_container {
+  padding-top: 2rem;
   max-width: fit-content;
 }
 

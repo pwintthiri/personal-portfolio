@@ -71,18 +71,22 @@ let swiper = new Swiper('.portfolio__container', {
   });
 
 /*==================== GALLERY MODAL ====================*/
-const blackdress = document.getElementById('blackdress')
-const modal_container = document.getElementById('modal_container')
-const close_modal = document.getElementById('close_modal')
+const modal_elements = document.getElementsByClassName('modal_container');
+const gallery_items = document.getElementsByClassName('gallery__item');
+const close_buttons = document.getElementsByClassName('close_btn');
 
-blackdress.addEventListener('click', () => {
-    modal_container.classList.add('show');
-});
+for (let i = 0; i < modal_elements.length; i++) {
+    const modal_element = modal_elements[i];
+    const gallery_item = gallery_items[i];
+    const close_button = close_buttons[i];
 
-close_modal.addEventListener('click', () => {
-    modal_container.classList.remove('show');
-});
-
+    gallery_item.addEventListener('click', () => {
+        modal_element.classList.add('show');
+    })
+    close_button.addEventListener('click', () => {
+        modal_element.classList.remove('show');
+    })  
+}
 
 /*==================== GALLERY MODAL SWIPER  ====================*/
 let modal_swiper = new Swiper('.modal__swiper', {
