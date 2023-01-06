@@ -8,13 +8,8 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
         
         <!--==================== SWIPER CSS ====================-->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-            />
-
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-        <!-- <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"> -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <script src="assets/js/swiper-bundle.min.js"></script>
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="./assets/css/styles.css">
@@ -83,25 +78,25 @@
                     <div class="gallery_sections">
                         <div class="gallery__row">
                             <div class="gallery__item" id="blackdress">
-                                <img src="assets/img/blackDressCover.jpeg" alt="sparkly black dress" class="gallery_img">
+                                <img src="assets/img/gallery/blackdress/blackdresscover.jpeg" alt="sparkly black dress" class="gallery_img">
                                 <div class="overlay">
                                   <div class="gallery_overlay_text">Sparkly Flower Dress</div>
                                 </div>
                               </div>
                               <div class="gallery__item" id="pearltop">
-                                <img src="assets/img/pearlButtonsCover.jpeg" alt="pearl button top" class="gallery_img">
+                                <img src="assets/img/gallery/pearltop/pearltopcover.jpeg" alt="pearl button top" class="gallery_img">
                                 <div class="overlay">
                                   <div class="gallery_overlay_text">Pearl Button Top</div>
                                 </div>
                               </div>
                               <div class="gallery__item" id="greendress">
-                                <img src="assets/img/greenDressCover.jpeg" alt="green dress" class="gallery_img">
+                                <img src="assets/img/gallery/greendress/greendresscover.jpeg" alt="green dress" class="gallery_img">
                                 <div class="overlay">
                                   <div class="gallery_overlay_text">Green Flowy Dress</div>
                                 </div>
                               </div>
                               <div class="gallery__item" id="denimhat">
-                                <img src="assets/img/denimHat.jpeg" alt="reversible denim hat" class="gallery_img">
+                                <img src="assets/img/gallery/denimhat/denimhatcover.jpeg" alt="reversible denim hat" class="gallery_img">
                                 <div class="overlay">
                                   <div class="gallery_overlay_text">Reversible Denim Hat</div>
                                 </div>
@@ -113,8 +108,45 @@
 
                 <div class="modal_container" id="modal_container">
                     <div class="modal">
-                        <p>here we write about the piece</p>
-                        <button class="close" id="close_modal">Close</button>
+                        <div class="close_btn" id="close_modal">Close</div>
+                        <div class="modal__swiper swiper-container">
+                            <div class="swiper-wrapper">
+                                <!--==================== IMAGE 1====================-->
+                                <div class="  swiper-slide">
+                                    <img src="assets/img/gallery/blackdress/blackdresscover.jpeg" class="modal_img">
+                                </div>
+                                <!--==================== IMAGE 2====================-->
+                                <div class="  swiper-slide">
+                                    <img src="assets/img/gallery/blackdress/1.jpeg" class="modal_img">
+                                </div>
+                                <!--==================== IMAGE 3====================-->
+                                <div class="  swiper-slide">
+                                    <img src="assets/img/gallery/blackdress/4.jpeg" class="modal_img">
+                                </div>
+                                <!--==================== IMAGE 4====================-->
+                                <div class="  swiper-slide">
+                                    <img src="assets/img/gallery/blackdress/3.jpeg" class="modal_img">
+                                </div>
+                                <!--==================== IMAGE 5====================-->
+                                <div class="  swiper-slide">
+                                    <img src="assets/img/gallery/blackdress/2.jpeg" class="modal_img">
+                                </div>
+                                
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next">
+                                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                            </div>
+                            <div class="swiper-button-prev">
+                                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                            </div>
+        
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi distinctio, labore voluptatum, tempore obcaecati porro a officiis soluta quo debitis adipisci eos dolorem corrupti molestias. Excepturi ratione eaque provident. Aliquam!</p>
+                        
                     </div>
                 </div>
             </section>

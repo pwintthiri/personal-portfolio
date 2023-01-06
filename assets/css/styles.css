@@ -584,7 +584,7 @@ img {
   background-color: var(--first-color);
 }
 .swiper-pagination-bullet{
-  transform: translateY(3rem); /* moved bullets down */
+  transform: translateY(2rem); /* moved bullets down */
 }
 
 .swiper-button-prev,
@@ -737,21 +737,36 @@ img {
 }
 .modal {
   background-color: #fff;
-  width: 600px;
+  width: 800px;
   padding: 30px 50px;
   border-radius: 50x;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   max-width: 100%;
   text-align: center;
+  border-radius: 10px;
 }
 .modal p { /* modal text */
-  font-size: 18px;
+  padding-top: 30px;
+  font-size: 15px;
 }
 
-.close {
+.close_btn {
+  border: 1px solid var(--text-color);
   padding: 3px;
-  background-color: #FFF;
-  /* border-radius: 2px; */
+  text-align: right;
+  width: min-content;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.modal__swiper {
+  overflow: initial;
+  position: relative;
+}
+
+.modal_img {
+  max-width: 365px;
 }
 
 /*==================== FOOTER ====================*/
