@@ -523,16 +523,19 @@ img {
 }
 
 .portfolio__img{
-  width: fit-content;   /* 265px; */
+  width: 265px;   /* fit-content; */
   overflow: visible;
   border-radius: 0.8rem;
   box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.5);
 }
 
-
 .tictactoe {
   height: 250px;
   width: auto;
+}
+
+.sewing__img {
+  max-width: 325px;
 }
 
 .portfolio__title{
@@ -656,7 +659,6 @@ img {
 
 .gallery_container {
   max-width: fit-content;
-  
 }
 
 .gallery__item {
@@ -843,17 +845,28 @@ img {
     width: 180px;
   }
 
+  .skills__title{
+    font-size: var(--normal-font-size);
+  }
+
   .qualification__data{
     gap: .5rem;
+  }
+
+  .services__container{
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+  .services__content{
+    padding-right: 3.5rem;
+  }
+  .services__modal{
+    padding: 0 .5rem;
   }
 
   .project__img{
     width: 200px;
   }
-
-  /* .gallery_container {
-    width: 100%;
-  } */
 }
 
 /* For medium devices */
@@ -869,8 +882,10 @@ img {
     justify-self: center;
   }
 
-  .about__container
+  .about__container,
+  .skills__container,
   .portfolio__content,
+  .project__container,
   .contact__container,
   .footer__container{
     grid-template-columns: repeat(2, 1fr);
