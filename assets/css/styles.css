@@ -746,6 +746,8 @@ img {
   max-width: 100%;
   text-align: center;
   border-radius: 10px;
+  z-index: var(--z-modal);
+  position: fixed;
 }
 .modal p { /* modal text */
   padding-top: 30px;
@@ -768,7 +770,12 @@ img {
 }
 
 .modal_img {
-  max-width: 365px;
+  max-width: 345px;
+}
+
+.completion_date {
+  font-size: 12px;
+  padding: 0px;
 }
 
 /*==================== FOOTER ====================*/

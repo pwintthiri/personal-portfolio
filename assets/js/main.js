@@ -102,6 +102,7 @@ let modal_swiper = new Swiper('.modal__swiper', {
     },
   });
 
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
