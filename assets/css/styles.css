@@ -663,7 +663,7 @@ img {
 }
 
 .gallery_container {
-  padding-top: 2rem;
+  padding-top: 1rem;
   max-width: fit-content;
 }
 
@@ -674,7 +674,7 @@ img {
 
 .gallery_img {
   display: block;
-  max-width: 315px;
+  max-width: 305px;
   height: auto;
   border: 2px solid white;
   /* box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.2); */
@@ -714,7 +714,8 @@ img {
 .gallery__row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 80px;
+  column-gap: 60px;
+  row-gap: 30px;
 }
 
 /*==================== GALLERY MODAL ====================*/
