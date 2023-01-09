@@ -76,12 +76,15 @@
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
   /* HSL color mode */
+  --first-color: rgba(117, 187, 224, 0.8);
+  --first-color-alt: rgba(76, 144, 216, 0.826);
   --first-color-second: rgba(125, 183, 215, 0.618);
   --header-color: rgba(81, 124, 131, 0.762);
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
   --icon-color: rgba(84, 158, 215, 0.865);
-  --input-color: rgb(211, 137, 113);
+  --input-color: rgb(29, 101, 147);
+  /* rgb(211, 137, 113); */
   /* hsl(164, 19%, 73%); */
   --body-color: hsl(244, 20%, 8%);
   --gallery-body-color: hsl(244, 20%, 8%);
@@ -312,7 +315,7 @@ img {
 
 .home__blob{
   width: 200px;
-  fill: var(--first-color);
+  /* fill: var(--first-color); */
 }
 
 .home__blob-img{
@@ -368,6 +371,20 @@ img {
 
 /*==================== BUTTONS ====================*/
 /* contact me button */
+.contact_btn{
+  border: none;
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  font-size: large;
+  /* max-width: fit-content; */
+}
+.contact_btn:hover{
+  background-color: var(--first-color-alt);
+}
+
 .button{
   display: inline-block;
   background-color: var(--first-color);
@@ -732,6 +749,7 @@ img {
   align-items: center;
   justify-content: center;
   transition: opacity 0.3s ease; /* modal fades in and out */
+  z-index: var(--z-modal);
 }
 .modal_container.show { /* for js part */
   pointer-events: auto;
@@ -746,7 +764,6 @@ img {
   max-width: 100%;
   text-align: center;
   border-radius: 10px;
-  z-index: var(--z-modal);
   position: fixed;
 }
 .modal p { /* modal text */
@@ -827,7 +844,8 @@ img {
 }
 
 .footer__social:hover{
-  color: #833A3A;
+  color: var(--first-color-alt);
+   /* #833A3A; */
   /* var(--first-color); */
 }
 .footer__left {
